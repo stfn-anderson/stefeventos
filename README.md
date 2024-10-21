@@ -53,6 +53,10 @@ O projeto visa introduzir os participantes ao desenvolvimento de Single Page App
 
 Jornada de Conheciento e Projeto desenvolvido por Anderson Soares e Mateus Fonseca 
 
+Documento com descrições com passo a passo:
+https://docs.google.com/document/d/1MoEaGsO0G1M87nzJqeddmWGhAZ3htDAsYsmVRY0CoxQ/edit?usp=sharing
+
+
 ## Como Rodar o Projeto
 
    ```bash
