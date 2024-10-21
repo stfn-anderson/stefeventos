@@ -27,14 +27,14 @@ O projeto visa introduzir os participantes ao desenvolvimento de Single Page App
 
 ### Aula 01: Introdução ao Angular e Criação do Projeto
 
-- [ ] O que é Angular e SPA.
-- [ ] Criação de um novo projeto Angular.
-- [ ] Entendendo a estrutura de um projeto Angular.
+- [x] O que é Angular e SPA.
+- [x] Criação de um novo projeto Angular.
+- [x] Entendendo a estrutura de um projeto Angular.
 - [ ] Adicionando Bootstrap para estilização.
-- [ ] Criando um componente básico.
-- [ ] Diferença entre `NgModule` e componentes Standalone.
-- [ ] Criando e configurando rotas.
-- [ ] Criando a página "Sobre Nós".
+- [x] Criando um componente básico.
+- [x] Diferença entre `NgModule` e componentes Standalone.
+- [x] Criando e configurando rotas.
+- [x] Criando a página "Sobre Nós".
 
 ### Aula 02: Trabalhando com Formulários e Listas
 
