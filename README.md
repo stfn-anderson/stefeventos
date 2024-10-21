@@ -1,27 +1,69 @@
 # Stefeventos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+**Stefeventos** é uma aplicação web desenvolvida como parte de um minicurso prático de introdução ao Angular. O objetivo é fornecer uma base sólida sobre como construir aplicações web modernas utilizando o framework Angular.
 
-## Development server
+## Objetivo do Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto visa introduzir os participantes ao desenvolvimento de Single Page Applications (SPA) com Angular, abordando desde a criação de componentes e gerenciamento de rotas até o trabalho com formulários, eventos e integração com APIs. Ao final do curso, os alunos terão desenvolvido uma aplicação funcional e publicado o projeto.
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Criação e navegação entre páginas.
+- Manipulação de formulários (cadastro de eventos).
+- Uso de diretivas como `NgFor` e `NgIf`.
+- Integração com API REST (busca de CEP).
+- Estilização com Bootstrap.
+- Publicação do projeto final.
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular 18**
+- **Bootstrap**
+- **API REST de CEP**
+- **HTML/CSS**
+- **Typescript**
 
-## Running unit tests
+## Estrutura do Curso
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Aula 01: Introdução ao Angular e Criação do Projeto
 
-## Running end-to-end tests
+- [ ] O que é Angular e SPA.
+- [ ] Criação de um novo projeto Angular.
+- [ ] Entendendo a estrutura de um projeto Angular.
+- [ ] Adicionando Bootstrap para estilização.
+- [ ] Criando um componente básico.
+- [ ] Diferença entre `NgModule` e componentes Standalone.
+- [ ] Criando e configurando rotas.
+- [ ] Criando a página "Sobre Nós".
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Aula 02: Trabalhando com Formulários e Listas
 
-## Further help
+- [ ] Criação de formulários e tratamento de eventos de clique.
+- [ ] Uso de `NgIf` para condições dinâmicas.
+- [ ] Trabalhando com listas e iterações com `NgFor`.
+- [ ] Filtragem de dados.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Aula 03: Componentização e Comunicação com API
+
+- [ ] Componentizando as páginas da aplicação.
+- [ ] Criando a página de cadastro de eventos.
+- [ ] Integração com uma API REST para consulta de CEP.
+- [ ] Finalização do projeto e publicação.
+- [ ] Desafios para praticar após o curso.
+
+Jornada de Conheciento e Projeto desenvolvido por Anderson Soares e Mateus Fonseca 
+
+## Como Rodar o Projeto
+
+   ```bash
+1. Clone este repositório:
+   git clone https://github.com/stfn-anderson/stefeventos.git
+
+2. Navegue até o diretório do projeto:
+cd stefeventos
+
+3. Instale as dependências:
+npm install
+
+4. Execute o servidor de desenvolvimento:
+ng serve
