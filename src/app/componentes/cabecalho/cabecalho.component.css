@@ -1,34 +1,38 @@
-
 header {
-  background-color: #0D6EFD;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  background-color: #0d6efd;
 
-header h1 {
-  color: white;
-  margin: 0;
-}
+  h1 {
+    margin: 0;
+    font-size: 30px;
+    font-family: Inter;
+    color: white;
+    text-transform: uppercase;
+  }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style-type: none;
 
-nav ul li {
-  margin: 0 15px;
-}
+      li {
+        margin: 0 15px;
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
 
-nav ul li a:hover {
-  text-decoration: underline;
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
