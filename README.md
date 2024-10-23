@@ -59,15 +59,22 @@ https://docs.google.com/document/d/1MoEaGsO0G1M87nzJqeddmWGhAZ3htDAsYsmVRY0CoxQ/
 
 ## Como Rodar o Projeto
 
-   ```bash
 1. Clone este repositório:
+   ```bash
    git clone https://github.com/stfn-anderson/stefeventos.git
+   ```
 
 2. Navegue até o diretório do projeto:
-cd stefeventos
+   ```bash
+   cd stefeventos
+   ```
 
 3. Instale as dependências:
-npm install
+   ```bash
+   npm install
+   ```
 
 4. Execute o servidor de desenvolvimento:
-ng serve
+   ```bash
+   ng serve
+   ```
