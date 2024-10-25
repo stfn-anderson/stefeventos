@@ -30,7 +30,7 @@ O projeto visa introduzir os participantes ao desenvolvimento de Single Page App
 - [x] O que é Angular e SPA.
 - [x] Criação de um novo projeto Angular.
 - [x] Entendendo a estrutura de um projeto Angular.
-- [ ] Adicionando Bootstrap para estilização.
+- [x] Adicionando Bootstrap para estilização.
 - [x] Criando um componente básico.
 - [x] Diferença entre `NgModule` e componentes Standalone.
 - [x] Criando e configurando rotas.
@@ -38,10 +38,10 @@ O projeto visa introduzir os participantes ao desenvolvimento de Single Page App
 
 ### Aula 02: Trabalhando com Formulários e Listas
 
-- [ ] Criação de formulários e tratamento de eventos de clique.
-- [ ] Uso de `NgIf` para condições dinâmicas.
-- [ ] Trabalhando com listas e iterações com `NgFor`.
-- [ ] Filtragem de dados.
+- [x] Criação de formulários e tratamento de eventos de clique.
+- [x] Uso de `NgIf` para condições dinâmicas.
+- [x] Trabalhando com listas e iterações com `NgFor`.
+- [x] Filtragem de dados.
 
 ### Aula 03: Componentização e Comunicação com API
 
@@ -51,25 +51,27 @@ O projeto visa introduzir os participantes ao desenvolvimento de Single Page App
 - [ ] Finalização do projeto e publicação.
 - [ ] Desafios para praticar após o curso.
 
-Jornada de Conheciento e Projeto desenvolvido por Anderson Soares e Mateus Fonseca 
+Jornada de Conheciento e Projeto desenvolvido por Anderson Soares e Mateus Fonseca
 
 Documento com descrições com passo a passo:
 https://docs.google.com/document/d/1MoEaGsO0G1M87nzJqeddmWGhAZ3htDAsYsmVRY0CoxQ/edit?usp=sharing
 
-
 ## Como Rodar o Projeto
 
 1. Clone este repositório:
+
    ```bash
    git clone https://github.com/stfn-anderson/stefeventos.git
    ```
 
 2. Navegue até o diretório do projeto:
+
    ```bash
    cd stefeventos
    ```
 
 3. Instale as dependências:
+
    ```bash
    npm install
    ```

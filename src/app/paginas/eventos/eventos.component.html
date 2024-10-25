@@ -1,1 +1,42 @@
-<p>Encontre aqui todos os eventos da Stef</p>
+<h1>
+  "Descubra eventos incríveis perto de você. Digite o que procura e descubra
+  experiências incríveis ao seu alcance."
+</h1>
+
+<div class="filtros">
+  <div class="w-100">
+    <label for="nome" class="form-label">Nome do Evento</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nome"
+      [formControl]="filtroNome"
+      placeholder="Pesquise pelo nome do evento"
+      (input)="onChangeFiltroNome()"
+    />
+  </div>
+
+  <label>ou</label>
+
+  <div class="w-100">
+    <label for="local" class="form-label">Local do Evento</label>
+    <input
+      type="text"
+      class="form-control"
+      id="local"
+      [formControl]="filtroLocal"
+      placeholder="Pesquise pelo local do evento"
+      (input)="onChangeFiltroLocal()"
+    />
+  </div>
+</div>
+
+<div class="cards">
+  <app-card
+    *ngFor="let evento of listaEventosFiltrada"
+    class="card-evento"
+    [titulo]="evento.titulo"
+    [local]="evento.local"
+    [data]="evento.data"
+  />
+</div>
