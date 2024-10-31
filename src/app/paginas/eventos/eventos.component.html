@@ -3,6 +3,17 @@
   experiências incríveis ao seu alcance."
 </h1>
 
+<div class="d-flex justify-content-end">
+  <button
+    type="button"
+    class="btn btn-success"
+    data-bs-toggle="modal"
+    data-bs-target="#modalCadastrarEvento"
+  >
+    Cadastrar Evento
+  </button>
+</div>
+
 <div class="filtros">
   <div class="w-100">
     <label for="nome" class="form-label">Nome do Evento</label>
@@ -37,6 +48,8 @@
     class="card-evento"
     [titulo]="evento.titulo"
     [local]="evento.local"
-    [data]="evento.data"
+    [data]="format(evento.data)"
   />
 </div>
+
+<app-modal-cadastrar-evento (onSubmitEvento)="newEvento($event)" />
