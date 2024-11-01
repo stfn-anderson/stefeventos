@@ -34,18 +34,17 @@ export class ModalCadastrarEventoComponent {
   consultaCep() {
     const cep = this.formNewEvento.get("cep")?.value.toString();
 
-    if (cep.length == 8)
-      this.cepService.consultarCep(cep).subscribe((res) => {
-        if (res.erro) alert("CEP Inválido!");
-        else
-          this.formNewEvento.patchValue({
-            logradouro: res.logradouro,
-            complemento: res.complemento,
-            bairro: res.bairro,
-            cidade: res.localidade,
-            uf: res.uf,
-          });
-      });
+    this.cepService.consultarCep(cep).subscribe((res) => {
+      if (res.erro) alert("CEP Inválido!");
+      else
+        this.formNewEvento.patchValue({
+          logradouro: res.logradouro,
+          complemento: res.complemento,
+          bairro: res.bairro,
+          cidade: res.localidade,
+          uf: res.uf,
+        });
+    });
   }
 
   onSave() {
@@ -60,6 +59,16 @@ export class ModalCadastrarEventoComponent {
       uf: this.formNewEvento.get("uf")?.value,
     } as FormularioEvento;
 
+    this.formNewEvento.patchValue({
+      titulo: "",
+      data: "",
+      cep: "",
+      logradouro: "",
+      complemento: "",
+      bairro: "",
+      cidade: "",
+      uf: "",
+    })
     this.onSubmitEvento.emit(form);
   }
 }
