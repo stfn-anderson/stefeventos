@@ -45,11 +45,10 @@ O projeto visa introduzir os participantes ao desenvolvimento de Single Page App
 
 ### Aula 03: Componentização e Comunicação com API
 
-- [ ] Componentizando as páginas da aplicação.
-- [ ] Criando a página de cadastro de eventos.
-- [ ] Integração com uma API REST para consulta de CEP.
-- [ ] Finalização do projeto e publicação.
-- [ ] Desafios para praticar após o curso.
+- [x] Componentizando as páginas da aplicação.
+- [x] Criando a página de cadastro de eventos.
+- [x] Integração com uma API REST para consulta de CEP.
+- [x] Desafios para praticar após o curso.
 
 Jornada de Conheciento e Projeto desenvolvido por Anderson Soares e Mateus Fonseca
 
