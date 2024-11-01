@@ -14,9 +14,14 @@
           id="nome"
           formControlName="nome"
         />
-        <small *ngIf="this.formContato.get('nome')?.invalid"
-          >O nome é obrigatório</small
+        <small
+          *ngIf="
+            this.formContato.get('nome')?.invalid &&
+            this.formContato.get('nome')?.touched
+          "
         >
+          O nome é obrigatório
+        </small>
       </div>
       <div>
         <label for="email" class="form-label">Email</label>
@@ -26,6 +31,14 @@
           id="email"
           formControlName="email"
         />
+        <small
+          *ngIf="
+            this.formContato.get('email')?.invalid &&
+            this.formContato.get('email')?.touched
+          "
+        >
+          O email é obrigatório
+        </small>
       </div>
       <div>
         <label for="mensagem" class="form-label">Mensagem</label>
@@ -34,6 +47,22 @@
           id="mensagem"
           formControlName="mensagem"
         ></textarea>
+        <small
+          *ngIf="
+            this.formContato.get('mensagem')?.hasError('required') &&
+            this.formContato.get('mensagem')?.touched
+          "
+        >
+          A mensagem é obrigatória
+        </small>
+        <small
+          *ngIf="
+            !this.formContato.get('mensagem')?.hasError('required') &&
+            this.formContato.get('mensagem')?.hasError('minlength')
+          "
+        >
+          Sua mensagem precisa de no mínimo 5 caracteres
+        </small>
       </div>
       <button type="button" class="btn btn-primary" (click)="onSend()">
         Enviar

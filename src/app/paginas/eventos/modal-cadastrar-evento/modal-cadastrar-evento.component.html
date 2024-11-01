@@ -1,0 +1,142 @@
+<div
+  class="modal fade modal-lg"
+  id="modalCadastrarEvento"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="modalCadastrarEventoLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalCadastrarEventoLabel">
+          Cadastrar Evento
+        </h1>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body p-5">
+        <form class="row gap-3" [formGroup]="formNewEvento">
+          <div class="row col-12">
+            <div class="col-6">
+              <label for="titulo" class="form-label">Titulo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="titulo"
+                formControlName="titulo"
+              />
+            </div>
+
+            <div class="col-6">
+              <label for="data" class="form-label">Data</label>
+              <input
+                type="date"
+                class="form-control"
+                id="data"
+                formControlName="data"
+              />
+            </div>
+          </div>
+
+          <div class="row col-12">
+            <div class="col-6">
+              <label for="cep" class="form-label">CEP</label>
+              <div class="d-flex gap-2">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="cep"
+                  formControlName="cep"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  [disabled]="
+                    this.formNewEvento.get('cep')?.value.toString() == '' ||
+                    this.formNewEvento.get('cep')?.value.toString().length != 8
+                  "
+                  (click)="consultaCep()"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row col-12">
+            <div class="col-6">
+              <label for="logradouro" class="form-label">Logradouro</label>
+              <input
+                type="text"
+                class="form-control"
+                id="logradouro"
+                formControlName="logradouro"
+              />
+            </div>
+
+            <div class="col-6">
+              <label for="complemento" class="form-label">Complemento</label>
+              <input
+                type="text"
+                class="form-control"
+                id="complemento"
+                formControlName="complemento"
+              />
+            </div>
+          </div>
+
+          <div class="row col-12">
+            <div class="col-5">
+              <label for="bairro" class="form-label">Bairro</label>
+              <input
+                type="text"
+                class="form-control"
+                id="bairro"
+                formControlName="bairro"
+              />
+            </div>
+
+            <div class="col-5">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cidade"
+                formControlName="cidade"
+              />
+            </div>
+
+            <div class="col-2">
+              <label for="uf" class="form-label">UF</label>
+              <input
+                type="text"
+                class="form-control"
+                id="uf"
+                formControlName="uf"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-success"
+          data-bs-dismiss="modal"
+          (click)="onSave()"
+        >
+          Salvar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
